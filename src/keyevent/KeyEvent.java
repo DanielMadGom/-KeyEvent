@@ -26,8 +26,8 @@ public class KeyEvent extends Application {
             switch (e.getCode()) {
                 case DOWN: text.setY(text.getY() + 10); break;
                 case UP: text.setY(text.getY() - 10); break;
-                case LEFT: text.setX(text.getX() - 10); break;
                 case RIGHT: text.setX(text.getX() + 10); break;
+                case LEFT: text.setX(text.getX() - 10); break;
                 default:
                     if (e.getCode().isDigitKey() || e.getCode().isLetterKey())
                         text.setText(e.getText());
